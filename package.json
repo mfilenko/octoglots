@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Search GitHub users by the languages of their repositories.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx xo"
   },
   "author": {
     "name": "Max Filenko",
@@ -28,5 +29,32 @@
   "engines": {
     "node": ">=12",
     "npm": ">=6"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "eslint-config-xo-typescript": "^0.10.1",
+    "xo": "^0.24.0"
+  },
+  "xo": {
+    "extends": "xo-typescript",
+    "extensions": [
+      "ts"
+    ],
+    "ignores": [
+      "src/__tests__"
+    ],
+    "rules": {
+      "@typescript-eslint/indent": [
+        "error",
+        2,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ]
+    }
   }
 }
