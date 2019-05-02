@@ -1,0 +1,32 @@
+{
+  "name": "@msp/octoglots",
+  "version": "0.0.1",
+  "description": "Search GitHub users by the languages of their repositories.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Max Filenko",
+    "email": "contact@filenko.ms"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfilenko/octoglots.git"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "typescript",
+    "github",
+    "demo"
+  ],
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mfilenko/octoglots/issues"
+  },
+  "homepage": "https://github.com/mfilenko/octoglots#readme",
+  "engines": {
+    "node": ">=12",
+    "npm": ">=6"
+  }
+}
