@@ -5,7 +5,11 @@
   "scripts": {
     "test": "npm run lint && jest",
     "lint": "npx xo",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node dist/server",
+    "docker:build": "docker build --tag mfilenko/octoglots .",
+    "docker:start": "docker run --name octoglots --publish 80:3000 --detach mfilenko/octoglots",
+    "docker:stop": "docker stop octoglots"
   },
   "author": {
     "name": "Max Filenko",
