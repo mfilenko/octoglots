@@ -58,7 +58,8 @@
       "ts"
     ],
     "ignores": [
-      "src/__tests__"
+      "src/__tests__",
+      "**/*.d.ts"
     ],
     "rules": {
       "@typescript-eslint/indent": [
